@@ -6,6 +6,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -50,6 +51,32 @@ public class Main {
             System.out.println("В числе " + number + " наибольшим членом является " + two);
         } else {
             System.out.println("В числе " + number + " наибольшим членом является " + three);
+        }
+    }
+    public static void task5() {
+        System.out.println("Задача 5");
+        int a = 1;
+        int b = -2;
+        int c = 5;
+        if (a > b && a > c) {
+            if (b > c) {
+                System.out.println("число " + c + " число "+ b + " число " + a);
+            } else {
+                System.out.println("число " + b + " число "+ c + " число " + a);
+            }
+
+        } else if (b > c) {
+            if (a > c) {
+                System.out.println("число " + c + " число "+ a + " число " + b);
+            } else {
+                System.out.println("число " + a + " число "+ c + " число " + b);
+            }
+        } else {
+            if (a > b) {
+                System.out.println("число " + b + " число "+ a + " число " + c);
+            } else {
+                System.out.println("число " + a + " число "+ b + " число " + c);
+            }
         }
     }
 }
